@@ -1,8 +1,7 @@
 {
     "extends":[
         "airbnb",
-        "prettier",
-        "prettier/react"
+        "prettier"
     ],
     "rules":{
         "react/jsx-one-expression-per-line": "off",

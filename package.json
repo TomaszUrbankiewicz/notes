@@ -9,6 +9,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -42,13 +43,13 @@
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2"
   },
-  "husky":{
+  "husky": {
     "hooks": {
-      "pre-commit":"lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
-  "lint-staged":{
-    "*.js":[
+  "lint-staged": {
+    "*.js": [
       "prettier --config .prettierc --write",
       "eslint --fix",
       "git add"

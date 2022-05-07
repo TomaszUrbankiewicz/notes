@@ -1,11 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
 import logo from './logo.svg';
 import './App.css';
+
+
+const MyButoon = styled.button`
+  padding:50px;
+  border: 2px solid blue;
+  background-color: red;
+  
+`;
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <MyButoon>rtrtghrjwjgrjkl</MyButoon>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
