@@ -4,8 +4,9 @@ import Button from '../../components/button/Button';
 function Root() {
   return (
     <>
-      <h1> jestem </h1>
-      <Button>byton</Button>
+      <h1> Mój pierwszy projekt w metodzie Styled components </h1>
+      <Button>Close / save</Button>
+      <Button secondary>rEMOVE</Button>
     </>
   );
 }
