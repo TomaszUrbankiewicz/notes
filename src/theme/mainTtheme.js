@@ -4,5 +4,14 @@ export const theme = {
     tertiary: '#faed26',
     gray: '#c5c6c7',
     dark_gray:'#6b6e70',
-    black:'black'
+    black:'black',
+    fweight : {
+        norm:300,
+        big:600
+    },
+    fsize : {
+        s:'10px',
+        l:'14px',
+        xl:'16px'
+    }
 }
