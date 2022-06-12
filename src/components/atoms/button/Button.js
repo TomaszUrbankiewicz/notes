@@ -21,6 +21,10 @@ const Button = styled.button`
     border-radius: 50px;
     font-size: 10px;
     ` )}
+
+    :hover{
+        cursor: pointer;
+    }
 `;
 
 export default Button;

@@ -10,8 +10,8 @@ export const theme = {
         big:600
     },
     fsize : {
-        s:'10px',
-        l:'14px',
-        xl:'16px'
+        s:'16px',
+        l:'20px',
+        xl:'24px'
     }
 }
