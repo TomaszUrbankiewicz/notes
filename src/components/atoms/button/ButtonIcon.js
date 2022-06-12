@@ -11,7 +11,7 @@ const ButtonIcon = styled.button`
     border: none;
     background-color:${(activ) => activ ? 'white' : 'transparent'};
     :hover{
-        background-color: ${({ theme }) => theme.tertiary};
+        background-color: ${({ theme }) => theme. article};
     }
 `;
 

@@ -1,5 +1,6 @@
 import React from "react";
 import styled, {css} from "styled-components";
+import PropType from "prop-types";
 import Button from "../../atoms/button/Button";
 import Heading from "../../atoms/heading/Heading";
 import Paragraph from "../../atoms/paragraph/Paragraph";
@@ -15,7 +16,7 @@ const StyledWrapper = styled.div`
 `;
 const InnerWrapper = styled.div`
     padding:17px 30px; 
-    background-color: ${({theme}) => theme.tertiary};
+    background-color: ${({activeColor,theme}) => (activeColor ? theme[activeColor] : 'white')};
 `;
 const InnerWrapper2 = styled.div`
     padding:17px 30px; 
@@ -31,10 +32,10 @@ const DataInfo = styled(Paragraph)`
     font-size: 14px;
 `
 
-const Carts = () => {
+const Card = ({cardType}) => {
     return(
         <StyledWrapper>
-            <InnerWrapper yellow >
+            <InnerWrapper activeColor={cardType} >
                 <Heading big>Tomek Urbankiewicz</Heading>
                 <DataInfo>12.06.2022</DataInfo>
             </InnerWrapper>
@@ -46,4 +47,12 @@ const Carts = () => {
     );
 };
 
-export default Carts; 
+Card.propType={
+    cardType: PropType.oneOf(["note","twitter","article"]),
+};
+
+Card.defaultProps = {
+    cardType: "note",
+};
+
+export default Card; 

@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import Button from '../../components/atoms/button/Button';
 import Input from '../../components/atoms/input/Input';
 import ButtonIcon from "../../components/atoms/button/ButtonIcon";
-import Carts from '../../components/molecules/cards/Cards';
+import Card from '../../components/molecules/cards/Card';
 import {theme} from "../../theme/mainTtheme"; 
 import icon1 from '../../assets/back.svg'
 import icon2 from '../../assets/pen.svg';
@@ -39,7 +39,11 @@ function Root() {
           <br></br>
           <br></br>
           <br></br>
-          <Carts></Carts>
+          <Card></Card>
+          <br></br>
+          <Card cardType="twitter"></Card>
+          <br></br>
+          <Card cardType="article"></Card>
         </>
       </ThemeProvider>
     </>

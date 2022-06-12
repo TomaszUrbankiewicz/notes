@@ -1,7 +1,7 @@
 export const theme = {
-    primary: '#16ffbd',//zielony
-    secondary: '#f070a1',//rózowy
-    tertiary: '#faed26',//żułty 
+    note: '#16ffbd',//zielony
+    twitter: '#f070a1',//rózowy
+    article: '#faed26',//żułty 
     gray: '#c5c6c7',
     dark_gray:'#6b6e70',
     black:'black',
