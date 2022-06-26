@@ -4,7 +4,7 @@ import MainTemplate from '../../templates/MainTemplate';
 
 function Notes() {
   return (
-    <MainTemplate>
+    <MainTemplate pageType="note">
         <h1>Twoje notatki</h1>
         <br></br>
         <Card></Card>

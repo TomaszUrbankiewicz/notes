@@ -6,14 +6,14 @@ import {theme} from "../theme/mainTtheme";
 import Sidebar from '../components/organisms/Sidebar'
 
 
-function MainTemplate({children}) {
+function MainTemplate({children,pageType }) {
     return (
         <>
             <GlobalStyle />
             <ThemeProvider theme={theme}>
                 <>
-                {children}
-                <Sidebar/>
+                    <Sidebar pageType={pageType}/>
+                    {children}
                 </>
             </ThemeProvider>
         </>

@@ -12,7 +12,7 @@ const ContainerWrapper = styled.div`
     position: fixed;
     left: 0;
     top: 0;
-    background-color:${({theme}) => theme.article};
+    background-color: ${({activeColor,theme}) => (activeColor ? theme[activeColor] : theme.note)};
     height: 100vh;
     width: 150px;
     display: flex;
@@ -34,16 +34,16 @@ const ButtonBoxWrapper = styled.div`
     justify-content:space-between;
 `; 
 
-const Sidebar = () => {
+const Sidebar = ({pageType}) => {
     return(
-        <ContainerWrapper>
+        <ContainerWrapper activeColor={pageType}>
             <LogoWrapper icon={icon5}/>
             <ButtonBoxWrapper>
-                <Link to="/notes"> <ButtonIcon icon={icon2} activeclass="active"></ButtonIcon> </Link> 
-                <Link to="/article"> <ButtonIcon icon={icon3} activeclass="active"></ButtonIcon> </Link> 
-                <Link to="/twitter"> <ButtonIcon icon={icon4} activeclass="active"></ButtonIcon> </Link> 
+                <Link to="/notes"> <ButtonIcon icon={icon2} activeColor={pageType}></ButtonIcon> </Link> 
+                <Link to="/article"> <ButtonIcon icon={icon3}  activeColor={pageType}></ButtonIcon> </Link> 
+                <Link to="/twitter"> <ButtonIcon icon={icon4} activeColor={pageType}></ButtonIcon> </Link> 
             </ButtonBoxWrapper>
-            <ButtonIcon icon={icon1}></ButtonIcon>
+            <ButtonIcon icon={icon1} activeColor={pageType} ></ButtonIcon>
         </ContainerWrapper>
     );
 };
