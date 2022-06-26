@@ -51,6 +51,9 @@ const StyledLink = styled.a`
     position: absolute;
     right: 32px;
     top:20px;
+    background-size: 60%;
+    background-position: 50%;
+    background-repeat: no-repeat;
 `
 
 const Card = ({cardType}) => {
