@@ -3,25 +3,23 @@ import PropType from 'prop-types';
 import GlobalStyle from '../theme/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import {theme} from "../theme/mainTtheme"; 
-import Sidebar from '../components/organisms/Sidebar'
 
 
-function MainTemplate({children}) {
+function MainTemplateLogin({children}) {
     return (
         <>
             <GlobalStyle />
             <ThemeProvider theme={theme}>
                 <>
                 {children}
-                <Sidebar/>
                 </>
             </ThemeProvider>
         </>
     );
 }
 
-MainTemplate.PropType = {
+MainTemplateLogin.PropType = {
     children: PropType.element.isRequired,
 }
 
-export default MainTemplate;
+export default MainTemplateLogin;

@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../../components/molecules/cards/Card';
+import MainTemplate from '../../templates/MainTemplate';
 
 function Notes() {
   return (

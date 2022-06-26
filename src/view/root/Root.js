@@ -1,25 +1,31 @@
 import React from 'react';
+import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import MainTemplate from '../../templates/MainTemplate';
 import Button from '../../components/atoms/button/Button';
-import Input from '../../components/atoms/input/Input';
-import ButtonIcon from "../../components/atoms/button/ButtonIcon";
-import Card from '../../components/molecules/cards/Card';
-import { BrowserRouter } from 'react-router-dom';
-import icon1 from '../../assets/back.svg'
-import icon2 from '../../assets/pen.svg';
-import icon3 from '../../assets/light_bulb.svg';
-import icon4 from '../../assets/plus.svg';
-import icon5 from '../../assets/twitter.svg';
+import Articles from "../../view/root/Articles";
+import Twitters from '../../view/root/Twitters';
+import Notes from '../../view/root/Notes';
+
+// import Input from '../../components/atoms/input/Input';
+// import ButtonIcon from "../../components/atoms/button/ButtonIcon";
+// import Card from '../../components/molecules/cards/Card';
+// import icon1 from '../../assets/back.svg'
+// import icon2 from '../../assets/pen.svg';
+// import icon3 from '../../assets/light_bulb.svg';
+// import icon4 from '../../assets/plus.svg';
+// import icon5 from '../../assets/twitter.svg';
 
 function Root() {
   return (
-    <MainTemplate>
-      <BrowserRouter>
-        <Button>Notes</Button>
-        <Button>Twitter</Button>
-        <Button>Article</Button>
-      </BrowserRouter>
-    </MainTemplate>
+    <BrowserRouter>
+      <MainTemplate>
+        <Routes>
+          <Route exact path="/notes" element={<Notes/>} />
+          <Route path="/twitter" element={<Twitters/>} />
+          <Route path="/article" element={<Articles/>} />
+        </Routes>
+      </MainTemplate>
+    </BrowserRouter>
   );
 }
 

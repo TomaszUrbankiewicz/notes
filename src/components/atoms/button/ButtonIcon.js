@@ -9,9 +9,10 @@ const ButtonIcon = styled.button`
     background-position: 50% 50%;
     background-size: 40%;
     border: none;
-    background-color:${(activ) => activ ? 'white' : 'transparent'};
+    background-color:${({ theme }) => theme. article};
     :hover{
-        background-color: ${({ theme }) => theme. article};
+        background-color: white;
+        cursor: pointer;
     }
 `;
 

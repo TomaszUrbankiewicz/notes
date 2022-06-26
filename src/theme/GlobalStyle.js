@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 62.5%; //ustalamy 1 rem na tronie wynoszący 10px
     }
     body{
+        padding-left: 150px;
         font-size: 1.6rem; //happy rems ?
         font-family:"Montserrat", sans-serif;
     }
